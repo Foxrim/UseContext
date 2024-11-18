@@ -12,14 +12,14 @@ function UserProfile() {
 
 	return (
 		<div>
-			<h1>Code version TypeScript</h1>
-			<p>User is {isOnline ? "online" : "offline"} </p>
+			<h1>J'ai custom pour que ça rende mieux ^^</h1>
+			<p>User is {!isOnline ? "online" : "offline"}</p>
 
 			<button type="button"
 				onClick={() => {
 					setIsOnline(!isOnline);
 				}}>
-				click to change user status
+				click to change user status to {isOnline ? "online" : "offline"}
 			</button>
 		</div>
 	);
